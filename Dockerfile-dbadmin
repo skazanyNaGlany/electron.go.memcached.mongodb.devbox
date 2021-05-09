@@ -1,0 +1,10 @@
+FROM mongo-express:latest
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV LC_CTYPE C.UTF-8
+
+ENV ME_CONFIG_MONGODB_SERVER=db.devbox
+ENV ME_CONFIG_MONGODB_PORT=27017
+
+# your stuff here
