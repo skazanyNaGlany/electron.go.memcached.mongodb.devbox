@@ -27,5 +27,16 @@ RUN apt -y install default-jre
 RUN apt -y install psmisc
 RUN apt -y install dnsutils
 RUN apt -y install software-properties-common
-RUN apt -y install golang
+RUN apt -y install sudo
+
+# install latest Golang
+RUN rm -rf update-golang
+RUN git clone https://github.com/udhos/update-golang.git update-golang
+WORKDIR update-golang
+RUN sudo ./update-golang.sh
+WORKDIR ..
+RUN rm -rf update-golang
+
+ENV GOPATH /root/go/
+ENV PATH="${PATH}:/usr/local/go/bin/"
 
