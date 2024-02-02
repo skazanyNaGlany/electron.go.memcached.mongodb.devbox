@@ -34,3 +34,26 @@ Your MongoDB admin panel (Mongo-express) is accessible via ```http://localhost:5
 ```
 ./devbox_shell.sh dbpanel
 ```
+
+## Access www shell
+```
+./devbox_shell.sh www
+```
+
+NodeJS, NPM and Electron are installed by default.
+
+## Run Electron Hello World example
+```
+$ ./devbox_shell.sh www
+# cd electron-app
+# npm install
+# npm start
+```
+
+## Run Electron Hello World example using Vue, Vuetify and TypeScript
+```
+$ ./devbox_shell.sh www
+# cd vue-electron-app
+# npm install
+# npm run electron:serve
+```
