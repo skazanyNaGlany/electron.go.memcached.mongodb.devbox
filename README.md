@@ -1,4 +1,4 @@
-# nodejs.python3.mongodb.devbox
+# electron.go.memcached.mongodb.devbox
 Simple development box for www (NodeJS), api (GO) and db (MongoDB), with Mongo-express bundled.
 
 ## Run
